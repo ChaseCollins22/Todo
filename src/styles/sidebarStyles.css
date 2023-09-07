@@ -1,0 +1,15 @@
+.sidebar-container {
+  background-color: #057dcd;
+  color: #e8eef1;
+  width: 15em;
+  padding: 1em;
+}
+
+.sidebar-container h1 {
+  font-size: 1.5em;
+  border-bottom: 2px solid #e8eef1;
+}
+
+.sidebar-container ul {
+  list-style-type: square;
+}
