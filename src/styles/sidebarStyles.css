@@ -1,15 +1,167 @@
 .sidebar-container {
   background-color: #057dcd;
   color: #e8eef1;
-  width: 15em;
   padding: 1em;
+  width: 25em;
 }
 
 .sidebar-container h1 {
-  font-size: 1.5em;
+  font-size: 1.75em;
   border-bottom: 2px solid #e8eef1;
 }
 
 .sidebar-container ul {
-  list-style-type: square;
+  list-style-type: disclosure-closed;
+  padding: 0 1.75em;
+}
+
+.sidebar-container li {
+  font-size: 1.3em;
+  margin: .4em;
+  border-radius: .1em;
+  padding: .15em;
+}
+
+.sidebar-container li:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+.sidebar-container input {
+  background-color: #1e3d58;
+  padding: .5em;
+  border: 2px solid #e8eef1;
+  border-radius: .4em;
+  color: #e8eef1;
+  font-size: inherit;
+  width: -webkit-fill-available;
+}
+
+.sidebar-container input:focus {
+  outline: none;
+}
+
+@media (width <= 930px) {
+  .sidebar-container {
+    width: auto;
+  }
+}
+
+.project-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5em;
+}
+
+.project-btn-container button {
+  padding: .3em;
+  width: 40%;
+  margin: 0 .5em;
+  border-radius: .3em;
+  border: 1px solid #e8eef1;
+  color: #e8eef1;
+  cursor: pointer;
+}
+
+.project-btn-container #add-project-btn {
+  background-color: green;
+}
+
+.project-btn-container #cancel-project-btn {
+  background-color: red;
+}
+
+.project {
+  padding: 0 1.75em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: arrow;
+}
+
+.project button {
+  background: none;
+  border: none;
+  color: #e8eef1;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.edit-options-container {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.2em;
+  background-color: #1e3d58
+}
+
+.edit-options-container button {
+  background: none;
+  border: none;
+}
+
+#form-btn-container {
+  text-align: center;
+  padding: .25em .5em .75em .5em;
+}
+
+#form-btn-container button {
+  margin: .5em;
+  color: white;
+  border: 1px solid white;
+  border-radius: .15em;
+  padding: .15em .8em;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+#form-btn-container .add-btn {
+  background-color: green;
+  padding: .15em 1.47em
+}
+
+#form-btn-container .cancel-btn {
+  background-color: red;
+}
+
+.task-list-container {
+  margin: 2em;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1em;
+}
+
+.task-list-container * {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+.task-item-container {
+  display: flex;
+  justify-content: space-between;
+  border-radius: .25em;
+  border: 2px solid white;
+  padding: .75em;
+}
+
+
+.task-item-container:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.task-complete-btn-container {
+  display: flex;
+  align-items: center;
+  gap: .75em;
+}
+
+.task-complete-btn-container input {
+  appearance: none;
+  border-radius: 50%;
+  width: 1.25em;
+  height: 1.25em;
+  border: 2px solid #e8eef1;
+  transition: 0.2s all linear;
+  position: relative;
+  cursor: pointer;
 }

@@ -1,14 +1,15 @@
 * {
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 html {
   font-size: 16px;
-  font-family: sans-serif;
 }
 
 body {
   margin: 0;
+  min-width: 375px;
 }
 
 span {
@@ -51,6 +52,8 @@ span {
   white-space: nowrap;
   background-color: #43b0f1;
   color: #e8eef1;
+  height: 90vh;
+  overflow: hidden;
 }
 
 .task-type-container {
@@ -58,12 +61,68 @@ span {
   margin: 2em;
   display: flex;
   align-items: center;
-  width: 100%;
-  border-radius: .75em;
+  width: -webkit-fill-available;
+  border-radius: .25em;
+  height: min-content;
+  padding: .5em;
 }
 
-.task-type-container h1{
+.task-type-container h1 {
   font-weight: normal;
   margin: 0;
   padding: .75em;
+}
+
+.tasks {
+  width: -webkit-fill-available;
+}
+
+.task-list {
+  margin: 2em;
+  padding: .4em;
+  border-radius: .25em;
+}
+
+.task-list button {
+  background: none;
+  border: none;
+  font-size: 1.25em;
+  margin-left: 1em;
+  cursor: pointer;
+  color: #e8eef1;
+}
+
+.task-list:hover {
+  background-color: #057dcd;
+}
+
+#task-form {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25em 1.25em 0em 1.25em;
+  font-family: sans-serif;
+  font-size: 1.25em;
+}
+
+#task-form input,
+#task-form textarea {
+  font-size: .75em;
+  margin-bottom: .75em;
+  padding: .4em;
+}
+
+.task-form-container {
+  background-color: #057dcd;
+  margin: 2em;
+  border-radius: .25em;
+  border: 2px solid #057dcd;
+}
+
+
+
+
+@media (width <= 930px) {
+  .main-container {
+    flex-flow: column nowrap;
+  }
 }
