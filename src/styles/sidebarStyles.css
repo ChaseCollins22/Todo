@@ -2,7 +2,7 @@
   background-color: #057dcd;
   color: #e8eef1;
   padding: 1em;
-  width: 25em;
+  width: 27em;
 }
 
 .sidebar-container h1 {
@@ -12,7 +12,7 @@
 
 .sidebar-container ul {
   list-style-type: disclosure-closed;
-  padding: 0 1.75em;
+  padding: 0 1.25em;
 }
 
 .sidebar-container li {
@@ -91,12 +91,29 @@
   width: -moz-fit-content;
   width: fit-content;
   padding: 0.2em;
-  background-color: #1e3d58
+  background-color: #1e3d58;
+  position: absolute;
+  display: flex;
+  transform: translate(245%, -100%);
+  z-index: 2;
+  padding: .5em .2em;
+  border-radius: 5%;
+  box-shadow: 1px 1px 3px black;
 }
 
 .edit-options-container button {
   background: none;
   border: none;
+  color: #e8eef1;
+  font-size: 1em;
+  border-radius: .1em;
+  padding: .3em;
+  text-align: start;
+  cursor: pointer;
+}
+
+.edit-options-container button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 #form-btn-container {
@@ -142,6 +159,7 @@
   border-radius: .25em;
   border: 2px solid white;
   padding: .75em;
+  gap: 1em;
 }
 
 
@@ -153,6 +171,7 @@
   display: flex;
   align-items: center;
   gap: .75em;
+  white-space: normal; 
 }
 
 .task-complete-btn-container input {
@@ -164,4 +183,33 @@
   transition: 0.2s all linear;
   position: relative;
   cursor: pointer;
+  min-width: 1rem;
+}
+
+.projects-list li {
+  margin: .5em 0px;
+}
+
+.project .edit-project-textbox {
+  padding: .35em;
+  border-radius: .3em;
+  font-size: .9em;
+}
+
+.edit-project-btns {
+  padding: .3em;
+  margin: 0 .5em;
+  border-radius: .3em;
+  color: #e8eef1;
+  cursor: pointer;
+}
+
+#rename-confirm-btn {
+  background-color: green;
+  border: 1px solid #e8eef1;
+}
+
+#rename-cancel-btn {
+  background-color: red;
+  border: 1px solid #e8eef1;
 }
