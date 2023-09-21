@@ -10,6 +10,8 @@ html {
 body {
   margin: 0;
   min-width: 375px;
+  height: 100vh;
+  background-color: #1e3d58;
 }
 
 span {
@@ -52,7 +54,7 @@ span {
   white-space: nowrap;
   background-color: #43b0f1;
   color: #e8eef1;
-  height: 90vh;
+  height: 90%;
   overflow: auto;
 }
 
@@ -118,11 +120,23 @@ span {
   border: 2px solid #057dcd;
 }
 
-
-
-
 @media (width <= 930px) {
   .main-container {
     flex-flow: column nowrap;
   }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #1e3d58;
+  border-top: .6em solid #e8eef1;
+  align-items: center;
+}
+
+.footer p {
+  color: #e8eef1;
+  margin: 0;
+  font-size: 1.25em;
+  margin-top: .5em;
 }
